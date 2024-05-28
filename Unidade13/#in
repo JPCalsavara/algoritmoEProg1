@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+float volume_esfera(float r)
+{
+
+    float vol, pi;
+    pi = 3.14159;
+    vol = (4 / 3) * pi * r * r * r;
+    return vol;
+}
+int main()
+{
+    float r;
+    scanf("%d", &r);
+    printf("%.2f", volume_esfera(r));
+    return 0;
+}
